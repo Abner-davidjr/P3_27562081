@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/index', indexRouter);
 app.use('/users', usersRouter);
-app.use('/api', Routeruser);
+app.use('/api/auth', Routeruser);
 swaggerSetup(app);
 
 module.exports = app;
